@@ -35,6 +35,7 @@ function handleText(textNode) {
 
 	v = v.replace(/\bTest Plan\b/g, "Macro");
 	v = v.replace(/\bTEST PLAN\b/g, "MACRO");
+	v = v.replace(/\btest plan\b/g, "macro");
 
 	textNode.nodeValue = v;
 }
